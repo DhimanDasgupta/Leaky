@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeakyActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary" />
+
+    <ListView
+        android:id="@+id/activity_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_text_view"
+        android:layout_below="@id/activity_toolbar" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/activity_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/bottom_text"
+        android:textColor="@color/accent"
+        android:textSize="@dimen/bottom_text_size"
+        android:textStyle="bold" />
+</RelativeLayout>
